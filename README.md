@@ -6,6 +6,7 @@ I was tasked to assist Jill, the lead data scientist for ***FastLending***, with
 Using a combinations of **ML** methods to evaluate and predict potential credit risk from a credit card dataset provided by ***LendingClub***, a peer-to-peer lending services company. Scripts were created to see how the algorithms compared to each other.  (see links below for scripts of ML)
 
 [Credit Risk Resampling]( https://github.com/Apollo619/Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb)
+
 [Credit Risk Ensemble]( https://github.com/Apollo619/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
 
 ## Results:
@@ -45,6 +46,7 @@ A total of six (6) ML methods were implemented and evaluated based on their resu
 
 ## Summary: 
 When reading through the results and viewing the balanced accuracy scores with the precision and sensitivity, we can see that the over-sampling ML methods has similar results which indicates low accuracy, low precision, and moderate sensitivity. Additionally, under-sampling ML methods indicated a slight drop in scores when compared to over-sampling. In the fourth ML method *(Smoteenn)* which used a combination of over- and under-sampling the dataset had mixed results that show increase and decrease in scores for precision and sensitivity. When switching to an ensemble library we saw notable improvement for all score’s with the EasyEnsembleClassifier having the best scores for balanced accuracy, precision, and sensitivity for high_risk and low_risk applicants. 
+
 Based on the results listed above, it is recommended that ***FastLending*** use the machine learning method **EasyEnsembleClassifier**. As previously stated it showed the highest scores for balanced accuracy and sensitivity which for the company it is important that they accurately predict which applicates are more like to default on a loan and deny them than it is for them to approve an applicant who defaults on the loan, which ultimately costs the company money.  
 
 
